@@ -1,0 +1,20 @@
+{
+  "name": "@long_library/ts-template",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index/ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "release": "pnpm run build && changeset publish"
+  },
+  "keywords": [],
+  "author": "rotciv_dev <vsallesa@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.7",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
+  }
+}
